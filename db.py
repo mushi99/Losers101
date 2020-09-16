@@ -27,6 +27,7 @@ except mysql.connector.Error as err:
   else:
     print(err)
 else:
+  print("check")
   mycursor.close()
   mydb.close()
 
