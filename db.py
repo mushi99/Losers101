@@ -10,7 +10,7 @@ try:
   )
   mycursor = mydb.cursor()
 
-  query = ("SELECT * FROM request")
+  query = ("SELECT * FROM topics")
 
   mycursor.execute(query)
 
@@ -27,7 +27,6 @@ except mysql.connector.Error as err:
   else:
     print(err)
 else:
-  print("check")
   mycursor.close()
   mydb.close()
 
